@@ -35,6 +35,12 @@ const Header = ({ search, find, eventKey }) => {
           setProfile(res.data.data.profile);
         });
     }
+    setTimeout(() => {
+      setIsLogin(false);
+
+      window.location.reload();
+    }, 2399000);
+
   }, [memberId]);
 
   const changeValue = (e) => {
